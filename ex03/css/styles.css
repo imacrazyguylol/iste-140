@@ -1,0 +1,31 @@
+:root {
+    --body-font: "Zen Antique", serif;
+    --heading-font: "Zen Old Mincho", serif;
+}
+
+.bodyFont {
+  font-family: "Zen Antique", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.headFont {
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 1000;
+  font-style: normal;
+}
+
+section:not(.heading){
+    font-family: var(--body-font)
+}
+
+.heading {
+    font-family: var(--heading-font);
+}
+
+img#results {
+    position: relative;
+    float: right;
+    width: 250px;
+    margin: 0px 0px 20px 35px;
+}
