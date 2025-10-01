@@ -13,8 +13,64 @@
     font-style: normal;
 }
 
-body {
+html {
     background: #b1b5f2;
     background: linear-gradient(180deg, rgba(177, 181, 242, 1) 0%, rgba(167, 207, 196, 1) 100%);
 }
 
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+img {
+    flex-shrink: 0;
+    width: 45%;
+	height: max-content;
+    border-radius: 3px;
+}
+
+section > * {
+    margin: 2%;
+}
+
+section > p {
+    text-align: justify;
+}
+
+header {
+    text-align: center;
+    font-size: 150%;
+}
+
+.citation {
+    font-style: italic;
+}
+
+.emphasize {
+    font-weight: bold;
+    font-size: 300%;
+}
+
+main > section {
+    display: flex;
+}
+
+main > section:nth-child(odd) {
+    flex-flow: row;
+}
+
+main > section:nth-child(even) {
+    flex-flow: row-reverse;
+}
+
+.sidebyside {
+    display: flex;
+    flex-flow: row;
+}
+
+li {
+    padding-left: 2em;
+    text-indent: -2em;
+    margin: 10px 0px;
+}
