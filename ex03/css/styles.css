@@ -15,17 +15,44 @@
   font-style: normal;
 }
 
-section:not(.heading){
+:not(.headFont) {
     font-family: var(--body-font)
-}
-
-.heading {
-    font-family: var(--heading-font);
 }
 
 img#results {
     position: relative;
-    float: right;
     width: 250px;
+	height: max-content ;
     margin: 0px 0px 20px 35px;
+	flex-basis: 100%;
+}
+
+.horizontal {
+    display: flex;
+	flex-flow: row nowrap;
+}
+
+.vertical {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+table {
+	border: solid black;
+}
+
+tfoot {
+	font-weight: bold;
+}
+
+#resultsTable {
+	flex-basis: 75%;
+}
+
+section {
+	margin: 10px 20%;
+}
+
+header {
+	text-align: center;
 }
