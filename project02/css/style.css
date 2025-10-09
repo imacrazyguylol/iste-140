@@ -19,8 +19,9 @@ html {
 }
 
 body {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 4.75%;
+    margin-right: 4.75%;
+    padding-bottom: 250px; /* To make the bottom of the page easier to read */
 }
 
 img {
@@ -28,14 +29,28 @@ img {
     width: 45%;
 	height: max-content;
     border-radius: 3px;
+    box-shadow: rgba(0,0,0,0.6) 0px 0px 10px 1px;
+}
+
+p {
+    line-height: 150%;
+}
+
+section {
+    display: flex;
 }
 
 section > * {
-    margin: 2%;
+    margin: 2% 2.5%;
 }
 
-section > p {
+section p {
     text-align: justify;
+}
+
+section h2 {
+    flex-basis: 100%;
+    text-align: center;
 }
 
 header {
@@ -50,6 +65,10 @@ header {
 .emphasize {
     font-weight: bold;
     font-size: 300%;
+}
+
+main {
+    margin: 100px auto;
 }
 
 main > section {
@@ -67,6 +86,11 @@ main > section:nth-child(even) {
 .sidebyside {
     display: flex;
     flex-flow: row;
+}
+
+.vertical {
+    display: flex;
+    flex-flow: column;
 }
 
 li {
