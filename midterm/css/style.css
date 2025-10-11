@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.75em;
+
+    max-width: 800px;
+    margin: 25px auto;
+    
+}
+
+h1, h2 {
+    color: gray;
+    font-weight: normal;
+}
+
+header {
+    display: flex;
+    padding: 15px;
+    border: solid black 1.5px;
+    background-color: whitesmoke;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+header > div{
+    flex: 0 0 60%;
+    display: flex;
+    max-width: 55%;
+    flex-flow: column wrap;
+}
+
+header > img {
+    flex: 0 0 40%;
+    max-width: 40%;
+    object-fit: cover;
+}
+
+section.sidebyside {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+section.sidebyside > div {
+    max-width: 375px; /* (800px - 50px) / 2 */
+}
+
+section#impact {
+    padding: 15px;
+    border: solid black 1.5px;
+    /* display: flex; */
+}
+
+section#impact h2 {
+    display: inline;
+}
+
+section#impact p {
+    max-width: 70ch;
+}
+
+section#impact figure {
+    position: relative;
+    float: right;
+
+    max-width: 40%;
+    height: fit-content;
+    
+    margin: auto;
+    margin-left: 15px;
+    padding: 15px;
+
+    border: solid black 1.5px;
+
+    font-style: italic;
+}
+
+section#impact img {
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+footer {
+    background-color: whitesmoke;
+    padding: 15px;
+    border: solid black 1.5px;
+    margin-top: 25px;
+
+    text-align: right;
+    font-style: italic;
+    justify-content: center;
+}
