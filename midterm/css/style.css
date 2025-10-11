@@ -34,14 +34,14 @@ header > img {
     object-fit: cover;
 }
 
-section.sidebyside {
+.sidebyside {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     gap: 50px;
 }
 
-section.sidebyside > div {
+.sidebyside > section {
     max-width: 375px; /* (800px - 50px) / 2 */
 }
 
