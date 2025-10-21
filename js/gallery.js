@@ -1,7 +1,7 @@
 var images = [
     "images/space_resize.jpg",
-    "images/matrix_2.jpg",
-    "images/moog.jpg"
+    "images/matrix_resize.jpg",
+    "images/moog_resize.jpg"
 ];
 
 var i = 0;
