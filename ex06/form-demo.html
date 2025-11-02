@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Demo</title>
+</head>
+<body>
+    <h1>HTML Form Demo</h1>
+    <form method="post" action="#">
+        <div>
+            <label for="name">Enter your name:</label> <!-- for corresponds to id -->
+            <input type="text" name="name" id="name"> <!-- KEY=name VALUE=user input-->
+        </div>
+        <div>
+            <label for="password">Enter your password:</label> <!-- for corresponds to id -->
+            <input type="password" name="password" id="password"> <!-- KEY=name VALUE=user input-->
+        </div>
+        <div>
+            <label for="email">Enter your email:</label> <!-- for corresponds to id -->
+            <input type="text" name="email" id="email"> <!-- KEY=name VALUE=user input-->
+        </div>
+        <div>
+            <label for="number">Enter your number:</label> <!-- for corresponds to id -->
+            <input type="text" name="number" id="number"> <!-- KEY=name VALUE=user input-->
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+
+    <form method="post" action="#">
+        <p>Which browsers do you use?</p>
+        <div>
+            <label for="safari">Safari</label>
+            <input type="checkbox" name="safari" id="safari" value="safari">
+        </div>
+        <div>
+            <label for="firefox">firefox</label>
+            <input type="checkbox" name="firefox" id="firefox" value="firefox">
+        </div>
+        <div>
+            <label for="chrome">chrome</label>
+            <input type="checkbox" name="chrome" id="chrome" value="chrome">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
