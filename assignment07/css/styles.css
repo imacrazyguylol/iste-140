@@ -49,7 +49,7 @@ img {
 }
 
 footer {
-    max-width: 90vw;
+    width: 90vw;
 }
 
 @media screen and (max-width: 1300px) {
