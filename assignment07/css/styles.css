@@ -50,6 +50,7 @@ img {
 
 footer {
     width: 90vw;
+    word-break: break-all;
 }
 
 @media screen and (max-width: 1300px) {
