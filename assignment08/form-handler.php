@@ -11,12 +11,12 @@ session_start();
 /*
   2) FIELD MAP: If your HTML uses different names, update the names below.
 */
-$name           = $_POST['name']          ?? '';    // TODO: match your text input name
-$email          = $_POST['email']         ?? '';    // TODO: match your email input name
-$subject        = $_POST['subject']         ?? '';    // TODO: match your tel input name
-$content        = $_POST['content']      ?? '';    // TODO: match your checkbox group name WITHOUT [] here
-$known          = $_POST['known']      ?? '';    // TODO: match your radio group name
-$purpose        = $_POST['purpose']       ?? '';    // TODO: match your textarea name
+$name           = $_POST['name']          ?? '';
+$email          = $_POST['email']         ?? '';
+$subject        = $_POST['subject']         ?? '';
+$content        = $_POST['content']      ?? '';
+$known          = $_POST['known']      ?? '';
+$purpose        = $_POST['purpose']       ?? '';
 
 // 3) Build a simple "row" for this submission
 $record = [
@@ -27,7 +27,7 @@ $record = [
     'email'          => $email,
     'subject'        => $subject,
     'content'        => $content,
-    'known by'       => $known,
+    'known'       => $known,
     'purpose'        => $purpose,
 ];
 
@@ -50,16 +50,10 @@ $_SESSION['submissions'][] = $record;
     <!-- Display what we saved. Adjust labels as you prefer. -->
     <li><strong>Name:</strong> <?= htmlspecialchars($record['name']) ?></li>
     <li><strong>Email:</strong> <?= htmlspecialchars($record['email']) ?></li>
-    <li><strong>Phone:</strong> <?= htmlspecialchars($record['phone']) ?></li>
-    <li><strong>browsers:</strong>
-      <?php
-        // If browsers is an array, join it for display.
-        $browsersOut = is_array($record['browsers']) ? implode(', ', array_map('htmlspecialchars', $record['browsers'])) : htmlspecialchars((string)$record['browsers']);
-        echo $browsersOut;
-      ?>
-    </li>
-    <li><strong>Favorite Browser:</strong> <?= htmlspecialchars($record['favorite']) ?></li>
-    <li><strong>Message:</strong> <?= nl2br(htmlspecialchars($record['message'])) ?></li>
+    <li><strong>Subject:</strong> <?= htmlspecialchars($record['subject']) ?></li>
+    <li><strong>Content:</strong> <?= nl2br(htmlspecialchars($record['content'])) ?></li>
+    <li><strong>Known by:</strong> <?= htmlspecialchars($record['known']) ?></li>
+    <li><strong>Purpose:</strong> <?= htmlspecialchars($record['purpose']) ?></li>
   </ul>
 
   <div>
