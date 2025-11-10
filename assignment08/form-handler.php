@@ -13,10 +13,10 @@ session_start();
 */
 $name           = $_POST['name']          ?? '';    // TODO: match your text input name
 $email          = $_POST['email']         ?? '';    // TODO: match your email input name
-$phone          = $_POST['phone']         ?? '';    // TODO: match your tel input name
-$browsers       = $_POST['browsers']      ?? [];    // TODO: match your checkbox group name WITHOUT [] here
-$favorite       = $_POST['favorite']      ?? '';    // TODO: match your radio group name
-$message        = $_POST['message']       ?? '';    // TODO: match your textarea name
+$subject        = $_POST['subject']         ?? '';    // TODO: match your tel input name
+$content        = $_POST['content']      ?? '';    // TODO: match your checkbox group name WITHOUT [] here
+$known          = $_POST['known']      ?? '';    // TODO: match your radio group name
+$purpose        = $_POST['purpose']       ?? '';    // TODO: match your textarea name
 
 // 3) Build a simple "row" for this submission
 $record = [
@@ -25,10 +25,10 @@ $record = [
     // Store using clear keys. You can rename these display labels in view-submissions.php if desired.
     'name'           => $name,
     'email'          => $email,
-    'phone'          => $phone,
-    'browsers'       => $browsers,          // this is an array if you used name="browser[]"
-    'favorite'       => $favorite,
-    'message'        => $message,
+    'subject'        => $subject,
+    'content'        => $content,
+    'known by'       => $known,
+    'purpose'        => $purpose,
 ];
 
 // 4) Save to the session "table"
