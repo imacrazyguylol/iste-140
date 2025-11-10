@@ -1,3 +1,9 @@
+.headFont {
+    font-family: "Cal Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .bodyFont {
     font-family: "Gabarito", sans-serif;
     font-weight: 400;
@@ -32,12 +38,6 @@ article > h2 {
     flex-basis: 100%
 }
 
-.headFont {
-    font-family: "Cal Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 body {
     background-color: aliceblue;
     color: darkslategrey;
@@ -51,6 +51,41 @@ img {
 footer {
     width: 90vw;
     word-break: break-all;
+}
+
+fieldset {
+    margin: 20px 0;
+}
+
+.vertical {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+#content {
+    width: fit-content;
+}
+
+input[type="radio"]:hover {
+    padding: 1px;
+    background-color: rgba(140, 148, 155, 0.55);
+    box-shadow: rgba(0,0,0,0.55) 1.5px 1px 5px;
+    transition: 100ms ease;
+}
+
+input[type="checkbox"]:hover {
+    padding: 1px;
+    background-color: rgba(140, 148, 155, 0.55);
+    box-shadow: rgba(0,0,0,0.55) 1.5px 1px 5px;
+    transition: 100ms ease;
+}
+
+input[type="submit"] {
+    font-family: "Gabarito", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 18px;
 }
 
 @media screen and (max-width: 1300px) {

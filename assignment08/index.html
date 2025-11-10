@@ -84,74 +84,88 @@
     <footer>
         <p class="bodyFont">More info:</p>
         <ul class="bodyFont">
-            <li>https://www.wendycarlos.com/</li>
-            <li>https://en.wikipedia.org/wiki/Wendy_Carlos</li>
+            <li><a href="https://www.wendycarlos.com/">https://www.wendycarlos.com/</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Wendy_Carlos">https://en.wikipedia.org/wiki/Wendy_Carlos</a></li>
         </ul>
     </footer>
 
-    <div>
-        <h2>Contact me</h2>
-        <form action="form-handler.php" method="post">
+    <fieldset>
+        <legend class="bodyFont">Contact portal</legend>
+        <h2 class="headFont">Contact me</h2>
+        <form class="bodyFont" action="form-handler.php" method="post">
             <div>
-                <label for="name">Your name</label>
-                <input type="text" name="name" id="name" placeholder="My name">
+                <label for="name">Your name:</label>
+                <input type="text" name="name" id="name" placeholder="My name" maxlength="100">
             </div>
             <div>
                 <label for="email">Enter your email:</label>
-                <input type="email" name="email" id="email" placeholder="myemail@domain.tld">
+                <input type="email" name="email" id="email" placeholder="myemail@domain.tld" maxlength="100" required>
             </div>
             <div>
                 <label for="subject">Message subject:</label>
-                <input type="text" name="subject" id="subject" placeholder="My subject">
+                <input type="text" name="subject" id="subject" placeholder="My subject" maxlength="300">
             </div>
-            <div>
+            <br>
+            <div class="vertical">
                 <label for="content">Message content:</label>
-                <textarea name="content" id="content"></textarea>
+                <textarea name="content" id="content" rows="6" cols="40" required></textarea>
             </div>
-
-            <div>
+            <br>
+            <div class="vertical" id="known">
                 <label>How do I know you?</label>
-                <div>
-                    <input type="radio" name="known" value="friend" id="friend">
-                    <label for="friend">Friend</label>
-
-                    <input type="radio" name="known" value="colleague" id="colleague">
-                    <label for="colleague">Colleague</label>
-
-                    <input type="radio" name="known" value="family" id="family">
-                    <label for="family">Family</label>
-
-                    <input type="radio" name="known" value="school" id="school">
-                    <label for="school">School</label>
-
-                    <input type="radio" name="known" value="other" id="other">
-                    <label for="other">Other (Please specify in message!)</label>
+                <div class="options vertical">
+                    <div>
+                        <input type="radio" name="known" value="friend" id="friend">
+                        <label for="friend">Friend</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="known" value="colleague" id="colleague">
+                        <label for="colleague">Colleague</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="known" value="family" id="family">
+                        <label for="family">Family</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="known" value="school" id="school">
+                        <label for="school">School</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="known" value="otherRadio" id="otherRadio">
+                        <label for="otherRadio">Other (Please specify in message!)</label>
+                    </div>
                 </div>
             </div>
-
-            <div>
+            <br>
+            <div class="vertical" id="known">
                 <label>Please select all of the following which apply:</label>
-                <div>
-                    <input type="checkbox" name="purpose" value="urgent" id="urgent">
-                    <label for="urgent">Urgent</label>
-
-                    <input type="checkbox" name="purpose" value="Private" id="Private">
-                    <label for="Private">Private</label>
-
-                    <input type="checkbox" name="purpose" value="business" id="business">
-                    <label for="business">Business</label>
-
-                    <input type="checkbox" name="purpose" value="academic" id="academic">
-                    <label for="academic">Academic</label>
-
-                    <input type="checkbox" name="purpose" value="other" id="other">
-                    <label for="other">Other (Please specify in subject line!)</label>
+                <div class="options vertical">
+                    <div>
+                        <input type="checkbox" name="purpose" value="urgent" id="urgent">
+                        <label for="urgent">Urgent</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="purpose" value="Private" id="Private">
+                        <label for="Private">Private</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="purpose" value="business" id="business">
+                        <label for="business">Business</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="purpose" value="academic" id="academic">
+                        <label for="academic">Academic</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="purpose" value="otherCheckbox" id="otherCheckbox">
+                        <label for="otherCheckbox">Other (Please specify in subject line!)</label>
+                    </div>
                 </div>
             </div>
-
+            <br>
             <input type="submit" value="Send message">
         </form>
-    </div>
+    </fieldset>
 </body>
 
 </html>
