@@ -88,6 +88,12 @@ input[type="submit"] {
     font-size: 18px;
 }
 
+textarea {
+    font-family: "Gabarito", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 @media screen and (max-width: 1300px) {
     aside > img {
         min-width: 50vw;
