@@ -1,0 +1,43 @@
+content.txt
+**************
+
+[WEBSITE NAME]
+Morning Brew Roasters
+
+[HERO INTRO PARAGRAPH]
+Morning Brew Roasters is a small-batch coffee company focused on fresh, carefully sourced beans and simple brewing rituals. Our goal is to help people slow down, enjoy their mornings, and discover new favorites one cup at a time.
+
+--------------
+CONTENT BLOCKS
+--------------
+[IMAGE] block-roaster.png
+
+[HEADLINE 1]
+Small-Batch Roasting
+
+[BLURB 1]
+We roast in small batches so every bag is fresh, consistent, and tuned to bring out the natural sweetness of each origin.
+
+--------------
+[IMAGE] block-pourover.png
+
+[HEADLINE 2]
+Brew Better at Home
+
+[BLURB 2]
+From pour-over to French press, we share simple brewing guides to help you get café-quality coffee in your own kitchen.
+
+--------------
+[IMAGE] block-bags.png
+
+[HEADLINE 3]
+Seasonal Coffee Subscriptions
+
+[BLURB 3]
+Get a rotating selection of our favorite coffees delivered on your schedule, with tasting notes included in every box.
+
+--------------
+FOOTER
+--------------
+[NEWSLETTER INVITATION SENTENCE]
+Sign up for our newsletter to get brewing tips, early access to new releases, and occasional subscriber-only discounts.

@@ -1,23 +1,33 @@
+h1 {
+  margin: 0 auto;
+  align-self: center;
+  display: inline;
+    
+  left: -1.5ch;
+  position: relative;
+}
+
 a {
     text-decoration: none;
     color: unset;
 }
 
 a.home {
-    position: relative;
-    
-    
+    content: "⤺ ";
+    display: flex;
 }
-
-
 
 a.home:hover h1::before {
     content: "⤺ ";
 }
 
 a.home h1::before {
-    content: "";
+    content: "⤺ ";
+    opacity: 0%;
+
     
     transition-property: content;
     transition-duration: 250ms;
+    left: 1.5ch;
+    position: relative;
 }
