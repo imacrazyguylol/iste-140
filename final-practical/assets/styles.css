@@ -1,19 +1,44 @@
+:root {
+    --almond-cream: #e7d7c1ff;
+    --onyx: #0d0a0bff;
+    --charcoal-blue: #454955ff;
+    --hunter-green: #42633bff;
+    --fern: #53714dff;
+    --linen: #f3ebe0ff;
+}
+
+body {
+    background-color: var(--linen);
+    color: var(--onyx);
+    
+    margin: 0 0;
+}
+
+.headfont, h1, h2 {
+    font-family: "Noticia Text", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.bodyfont, p {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
 header {
     height: 20vh;
-    background-color: gray;
-    color: white;
+    background-color: var(--onyx);
+    color: var(--almond-cream);
 
     display: grid;
 
-    grid-template-areas: 
+    grid-template-areas:
         "h1 h1 h1 h1 img"
         "p p p p img";
 
     padding: 0% 15%;
-}
-
-img {
-    display: block;
 }
 
 header * {
@@ -25,6 +50,8 @@ header h1 {
     align-self: end;
 
     margin: unset;
+
+    font-size: 250%;
 }
 
 header p {
@@ -54,12 +81,15 @@ body {
     font-family: helvetica;
 }
 
-#slideshow {
+#slide {
     background-color: lightgray;
     height: 80px;
-    margin-top: 10px;
+    margin: 10px auto;
+
 
     display: block;
+    width: 98%;
+    height: fit-content;
 }
 
 #feed {
@@ -68,16 +98,24 @@ body {
 
 .article {
     display: grid;
+    
+    margin: 0 1%;
 
-    grid-template-areas: 
+    grid-template-areas:
         "img h2 h2 h2 ."
         "img p  p  p  ."
         "img p  p  p  a";
     grid-column-gap: 10px;
+    
+    grid-template-rows: 40%;
+    grid-template-columns: auto auto auto auto 15%
+     
 }
 
 .article h2 {
     grid-area: h2;
+    margin: auto 0;
+    align-self: end;
 }
 
 .article a {
@@ -85,16 +123,24 @@ body {
 
     display: block;
     padding: 5px 15px;
-    background-color: lightgray;
+    background-color: var(--hunter-green);
+    color: var(--linen);
     border: 1px solid black;
-
+    
+    
     cursor: pointer;
 
     transition-duration: 150ms;
+    text-align: center;
+    align-self: center;
+    
+    
 }
 
 .article a:hover {
-    background-color: darkgray;
+    background-color: var(--fern);
+    
+    box-shadow: var(--hunter-green) 1px 1px 0px;
 }
 
 .article img {
@@ -111,6 +157,28 @@ body {
 
 form {
     align-self: center;
+}
+
+input[type="submit"] {
+    background-color: var(--hunter-green);
+    
+    color: var(--linen);
+    border: 1px solid black;
+    
+    
+    cursor: pointer;
+
+    transition-duration: 150ms;
+    
+/*     display: block; */
+    padding: 5px 15px;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: var(--fern);
+    
+    box-shadow: var(--hunter-green) 1px 1px 0px;
 }
 
 footer p {

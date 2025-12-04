@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Morning Brew Roasters</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/styles.css">
 </head>
+
 <body>
     <header>
-            <h1>Morning Brew Roasters</h1>
-            <p>
-                Morning Brew Roasters is a small-batch coffee company focused on fresh, carefully sourced beans and simple brewing rituals. Our goal is to help people slow down, enjoy their mornings, and discover new favorites one cup at a time.
-            </p>
+        <h1 class="title">Morning Brew Roasters</h1>
+        <p>
+            Morning Brew Roasters is a small-batch coffee company focused on fresh, carefully sourced beans and simple brewing rituals. Our goal is to help people slow down, enjoy their mornings, and
+            discover new favorites one cup at a time.
+        </p>
 
         <img src="assets/images/hero-coffee-barista.png" alt="A barista pours frothed milk into a mug, making a latte.">
     </header>
@@ -22,38 +29,39 @@
 
         <div id="feed">
             <div class="article">
-                <img src="thumbnail" alt="thumbnail">
-                <h2>This is a Headline</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, voluptatibus repellendus, officia voluptas debitis aliquam doloremque, beatae blanditiis quae ipsa reiciendis natus aut omnis incidunt minus illum autem. Nisi, consequatur?</p>
+                <img src="assets/images/block-roaster.png" alt="A person stirring beans in the drum of a coffee roaster.">
+                <h2>Small-Batch Roasting</h2>
+                <p>We roast in small batches so every bag is fresh, consistent, and tuned to bring out the natural sweetness of each origin.</p>
                 <a>Read More</a>
             </div>
             <br>
             <div class="article">
-                <img src="thumbnail" alt="thumbnail">
-                <h2>This is a Headline</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, voluptatibus repellendus, officia voluptas debitis aliquam doloremque, beatae blanditiis quae ipsa reiciendis natus aut omnis incidunt minus illum autem. Nisi, consequatur?</p>
+                <img src="assets/images/block-pourover.png" alt="A person pouring water from a kettle into the filter of a french press.">
+                <h2>Brew Better at Home</h2>
+                <p>From pour-over to French press, we share simple brewing guides to help you get café-quality coffee in your own kitchen.</p>
                 <a>Read More</a>
             </div>
             <br>
             <div class="article">
-                <img src="thumbnail" alt="thumbnail">
-                <h2>This is a Headline</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, voluptatibus repellendus, officia voluptas debitis aliquam doloremque, beatae blanditiis quae ipsa reiciendis natus aut omnis incidunt minus illum autem. Nisi, consequatur?</p>
+                <img src="assets/images/block-bags.png" alt="A bag of coffee labelled &OpenCurlyDoubleQuote;House Blend&CloseCurlyDoubleQuote;, among many other similar bags on a table.">
+                <h2>Seasonal Coffee Subscriptions</h2>
+                <p>Get a rotating selection of our favorite coffees delivered on your schedule, with tasting notes included in every box.</p>
                 <a>Read More</a>
             </div>
         </div>
     </main>
 
     <footer>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea voluptas fugit quis repellendus laudantium eius, eaque nesciunt tempore atque, dolore illum quidem, facere optio quibusdam alias velit! Ea, ut optio.</p>
+        <p>Sign up for our newsletter to get brewing tips, early access to new releases, and occasional subscriber-only discounts.</p>
         <form action="#">
-            <label for="email">Email: </label>
-            <input type="email" name="email" id="email" placeholder="myemail@domain.tld" maxlength="100">
-            
-            <input type="submit" id="submit" value="Sign up">
+            <label class="bodyfont" for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="jane.doe@domain.com" maxlength="100">
+
+            <input class="bodyfont" type="submit" id="submit" value="Sign up">
         </form>
     </footer>
 
     <script src="assets/gallery.js"></script>
 </body>
+
 </html>
