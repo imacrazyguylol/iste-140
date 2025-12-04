@@ -1,0 +1,118 @@
+header {
+    height: 20vh;
+    background-color: gray;
+    color: white;
+
+    display: grid;
+
+    grid-template-areas: 
+        "h1 h1 h1 h1 img"
+        "p p p p img";
+
+    padding: 0% 15%;
+}
+
+img {
+    display: block;
+}
+
+header * {
+    padding: 10px;
+}
+
+header h1 {
+    grid-area: h1;
+    align-self: end;
+
+    margin: unset;
+}
+
+header p {
+    grid-area: p;
+    align-self: baseline;
+
+    margin: unset;
+}
+
+header img {
+    grid-area: img;
+    height: 90%;
+    width: auto;
+}
+
+main {
+    padding: 0% 15%;
+}
+
+footer {
+    padding: 0% 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+    font-family: helvetica;
+}
+
+#slideshow {
+    background-color: lightgray;
+    height: 80px;
+    margin-top: 10px;
+}
+
+#feed {
+    margin: 30px 0px;
+}
+
+.article {
+    display: grid;
+
+    grid-template-areas: 
+        "img h2 h2 h2 ."
+        "img p  p  p  ."
+        "img p  p  p  a";
+    grid-column-gap: 10px;
+}
+
+.article h2 {
+    grid-area: h2;
+}
+
+.article a {
+    grid-area: a;
+
+    display: block;
+    padding: 5px 15px;
+    background-color: lightgray;
+    border: 1px solid black;
+
+    cursor: pointer;
+
+    transition-duration: 150ms;
+}
+
+.article a:hover {
+    background-color: darkgray;
+}
+
+.article img {
+    grid-area: img;
+
+    width: 150px;
+    background-color: lightgray;
+    /*! margin: 10px; */
+}
+
+.article p {
+    grid-area: p;
+}
+
+form {
+    align-self: center;
+}
+
+footer p {
+    float: left;
+    width: 70%;
+    max-width: 70ch;
+}

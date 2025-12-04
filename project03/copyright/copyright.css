@@ -1,0 +1,23 @@
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+a.home {
+    position: relative;
+    
+    
+}
+
+
+
+a.home:hover h1::before {
+    content: "⤺ ";
+}
+
+a.home h1::before {
+    content: "";
+    
+    transition-property: content;
+    transition-duration: 250ms;
+}
