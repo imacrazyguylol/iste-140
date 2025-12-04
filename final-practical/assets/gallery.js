@@ -8,9 +8,9 @@
 // Each item in the array is the path to one image file.
 // Use your actual image filenames instead of "photo..."
 var images = [
-  "images/slide-beans.png",
-  "images/slide-shop.jpg",
-  "images/slide-mocha.jpg",
+  "assets/images/slide-beans.png",
+  "assets/images/slide-shop.jpg",
+  "assets/images/slide-mocha.jpg",
 ];
 
 // Step 2: Create a variable to keep track of which image is showing now.
