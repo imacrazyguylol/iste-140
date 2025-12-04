@@ -1,0 +1,100 @@
+.headFont {
+    font-family: "Fraunces", serif;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+        "SOFT" 0,
+        "WONK" 0;
+}
+
+.bodyFont {
+    font-family: "Hepta Slab", serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    background: #b1b5f2;
+    background: linear-gradient(180deg, rgba(177, 181, 242, 1) 0%, rgba(167, 207, 196, 1) 100%);
+}
+
+body {
+    margin-left: 4.75%;
+    margin-right: 4.75%;
+    padding-bottom: 250px; /* To make the bottom of the page easier to read */
+}
+
+img {
+    flex-shrink: 0;
+    width: 45%;
+	height: max-content;
+    border-radius: 3px;
+    box-shadow: rgba(0,0,0,0.6) 0px 0px 10px 1px;
+}
+
+p {
+    line-height: 150%;
+}
+
+section {
+    display: flex;
+}
+
+section > * {
+    margin: 2% 2.5%;
+}
+
+section p {
+    text-align: justify;
+}
+
+section h2 {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+header {
+    text-align: center;
+    font-size: 150%;
+}
+
+.citation {
+    font-style: italic;
+}
+
+.emphasize {
+    font-weight: bold;
+    font-size: 300%;
+}
+
+main {
+    margin: 100px auto;
+}
+
+main > section {
+    display: flex;
+}
+
+main > section:nth-child(odd) {
+    flex-flow: row;
+}
+
+main > section:nth-child(even) {
+    flex-flow: row-reverse;
+}
+
+.sidebyside {
+    display: flex;
+    flex-flow: row;
+}
+
+.vertical {
+    display: flex;
+    flex-flow: column;
+}
+
+li {
+    padding-left: 2em;
+    text-indent: -2em;
+    margin: 10px 0px;
+}
