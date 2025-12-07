@@ -1,0 +1,43 @@
+/* Main content styling */
+body {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-bottom: 250px; /* To make the bottom of the page easier to read */
+}
+
+img {
+    float: right;
+    margin: 20px;
+    
+    width: 50%;
+    max-height: 65vh;
+    
+    object-fit: cover;
+}
+
+p {
+    line-height: 160%;
+}
+
+main {
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 200px;
+}
+
+/* Specific text styles */
+main p {
+    text-align: justify;
+}
+
+.title {
+    margin-bottom: 0px;
+}
+
+.author {
+    margin: 0px;
+    font-size: unset;
+}
+
