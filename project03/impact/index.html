@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Copyright</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="impact.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,55 +15,60 @@
         href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hepta+Slab:wght@1..900&family=Zen+Antique&family=Zen+Old+Mincho&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <h1>Impact</h1>
+        <a class="home" href="../">
+            <h1 class="headFont">Impact</h1>
+        </a>
 
-        <nav class="sticky">
+        <nav class="headFont">
             <a id="copyright" href="../copyright/">Copyright</a>
-            <a id="impact" href="#" class="current">Impact</a>
+            <a id="impact" href="#" aria-current="page">Impact</a>
             <a id="about" href="../about/">About Me</a>
             <a id="contact" href="../contact/">Contact</a>
         </nav>
     </header>
-    
+
     <main>
-        <section id="copyright">
-            <div>
-                <h2 class="headFont">Copyright</h2>
-                <p class="bodyFont">
-                    I am certainly not the first person to raise these questions; in fact, they have already been answered to some extent in court. In 2023, a district court in Washington, D.C., took the
-                    stance that AI-generated content cannot receive copyright protection. (Bondari) The court determined that only human beings are entitled to protections of their work under copyright
-                    law, emphasizing that human creativity is a fundamental requirement for copyright eligibility. Still, the ruling is not final; “The Copyright Office has clarified that if a human
-                    provides significant creative input—such as editing, arranging, or selecting AI-generated elements—a work might be eligible for copyright protection.” (Bondari) That clarification is
-                    important, because it draws a line between art that passively emerges from an algorithm and art that is actively shaped by a human mind. Yet, many would argue that using AI closes the
-                    gap between imagination and execution, offering those who cannot draw or compose music the chance to see their ideas realized. To that I say: “Skill issue.” More importantly, art has
-                    never been about producing the most polished or photorealistic product; it has always been about expression, about the imperfections and complexities that reveal a person's unique way
-                    of seeing the world. AI inherently does not have individuality. Its “style,” if we can even call it that, is the average of all human creation. In other words, AI art is not art at
-                    all, but a simulacrum of it. If you truly had ideas, but lacked a medium through which to express them, AI is not that medium, and probably never will be. So to copyright the creation
-                    of an algorithm which generates based on the rest of human creation would be a gross misunderstanding of the idea of copyright itself.
-                </p>
-            </div>
-            <img src="assets/copyright_ai.jpeg" alt="A scale with the chatGPT symbol and copyright icon on either side">
+        <section id="poison-pilling">
+            <h2 class="headFont">Poison-pilling</h2>
+            <img src="assets/nightshade_example.jpg" alt="An example of a digital drawing with Nightshade applied to it. The effect is nearly unnoticable.">
+            <p class="bodyFont">
+                <span class="emphasize">In response</span> to the massive uprising of AI generated media, and insurmountable companies stealing their hard work and feeding it into a power-hungry technological black box for
+                profit,
+                artists have found numerous ways to fight back. A team at the University of Chicago has developed multiple tools designed to deter models from training on art by injecting it with
+                special noise that although nearly undetectable to the human eye, completely warps the way the AI model sees the work. (Nightshade Team) This technology, sometimes referred to
+                as
+                “poison-pilling”, has seen growth and development over recent years as artists become more wary of models being trained on their works. The team describes their work as follows:
+                “we
+                propose the use of Nightshade as a powerful tool for content owners to protect their intellectual property. Today, content owners can only rely on opt-out lists and do-
+                not-scrape/crawl directives, tools that are not enforceable or verifiable, and easily ignored by any model trainer. Movie studios, book publishers, game producers and individual
+                artists can use systems like Nightshade to provide a strong disincentive against unauthorized data training.” Corporations are clearly unwilling to do the essential job of
+                protecting
+                creators and artists from having their work stolen, and for good reason: many creators, when presented the choice, would probably opt out of having their work used to train AI
+                models.
+                Between the effort taken to legally and ethically acquire source material for these models and the potential reduction in quality of their output due to less training data, it
+                wouldn’t
+                be nearly as sustainable for these companies to consensually source training data. So of course these profit-driven, multi-billion dollar companies turn to scraping literally
+                everything off the web (Jones) without regard to how the creators of that data feel about it. But the apparent necessity of this practice raises the question: if we can’t train AI
+                ethically, is training AI even ethical?
+            </p>
+            
         </section>
 
-        <section id="training">
-            <div>
-                <h2 class="headFont">Training models</h2>
-                <p class="bodyFont">
-                    Far more troubling in my opinion than people generating art, writing, and music using AI and passing it off as their own, is the issue
-                    of how these models are trained in the first place. An increasing number of lawsuits have accused companies like OpenAI, Meta, and Stability AI of building their tools on the works
-                    of
-                    artists and writers without their consent. In Andersen v. Stability AI, a group of artists alleged that Stability AI, Midjourney, and DeviantArt scraped billions of images from the
-                    internet—including their copyrighted works—to train platforms such as Stable Diffusion and DreamStudio. The court found these allegations sufficient to plead direct infringement,
-                    since
-                    the plaintiffs’ works were not just referenced, but stored or incorporated into the model itself as compressed copies. Similarly, in 2023, The New York Times sued OpenAI and
-                    Microsoft
-                    for using millions of its articles as training material without permission or compensation. (Bondari) These companies are making billions of dollars off the work of artists without
-                    their consent. If there has ever been a grander, more obvious violation of copyright, I’d be surprised.
-                </p>
-            </div>
-            <img src="assets/chatgpt.jpg" alt="The chatGPT logo on a device screen">
+        <section id="ecology">
+            <h2 class="headFont">Ecological impact</h2>
+            <p class="bodyFont">
+                One of the largest, yet quietest impacts of AI training is the ecological impact. Data centers used to train AI models operated by companies like Google, Meta, OpenAI, and others
+                use
+                an estimated 4.4% of all the energy in the US. Projections also show this number climbing as these data centers expand and models continue to train. The exact ecological impact is
+                unclear because many of these companies refuse to give exact figures for their energy use, but “Harvard’s T.H. Chan School of Public Health found that the carbon intensity of
+                electricity used by data centers was 48% higher than the US average.” (O'Donnell and Crownhart) Despite the lack of transparency from these companies, it is clear that protecting
+                the
+                environment is not a top priority for them. These practices are especially concerning given the current state of the climate, as our leaders begin to aggressively reverse course on
+                decades of ecological progress.
+            </p>
         </section>
     </main>
 
@@ -92,7 +98,8 @@
             </ul>
         </div>
 
-        <p id="copyright">&copy; 2025 Liam Rowell</p>
+        <p class="bodyFont attribution">&copy; 2025 Liam Rowell</p>
     </footer>
 </body>
+
 </html>
