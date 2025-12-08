@@ -23,7 +23,7 @@ html {
 
 img {
     /*! flex-shrink: 0; */
-    width: 45%;
+    max-width: 45%;
 	/*! height: max-content; */
     border-radius: 3px;
     box-shadow: rgba(0,0,0,0.6) 0px 0px 10px 1px;

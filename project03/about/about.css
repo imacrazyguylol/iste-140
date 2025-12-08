@@ -1,0 +1,33 @@
+body {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 250px; /* To make the bottom of the page easier to read */
+}
+
+main {
+    margin: 100px auto;
+}
+
+main section:nth-child(odd) img {
+    float: right;
+}
+
+main section:nth-child(even) img {
+    float: left;
+}
+
+main *:not(.emphasize) {
+    margin: 2% 2.5%;
+}
+
+p {
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    float: right;
+}
