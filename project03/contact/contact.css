@@ -1,8 +1,6 @@
 body {
     margin-left: 15%;
     margin-right: 15%;
-    padding-bottom: 250px; /* To make the bottom of the page easier to read */
-
     min-height: 100vh;
 }
 
@@ -49,6 +47,8 @@ input {
     font-family: "Hepta Slab", serif;
     font-weight: normal;
     font-style: normal;
+    
+    margin: 2px;
 }
 
 input[type="text"], input[type="email"] {
@@ -68,6 +68,8 @@ input[type="text"]:hover, input[type="email"]:hover {
 input[type="text"]:focus, input[type="email"]:focus {
     background-color: rgba(0, 0, 0, 0.3);
     border-bottom: black solid 2px;
+    
+    margin-bottom: 0px;
 }
 
 input[type="submit"] {
@@ -103,7 +105,7 @@ input[type="submit"]:active {
 
 textarea {
     display: block;
-    margin: auto;
+    margin: 2px auto;
     
     width: 80%;
     max-width: 100%;
@@ -121,5 +123,7 @@ textarea {
 
 textarea:focus {
    border-style: solid;
+    
+   margin: 0px, auto;
 }
 
