@@ -21,6 +21,11 @@ html {
     background: linear-gradient(180deg, rgba(177, 181, 242, 1) 0%, rgba(167, 207, 196, 1) 100%);
 }
 
+body {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
 img {
     /*! flex-shrink: 0; */
     max-width: 45%;

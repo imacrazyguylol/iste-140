@@ -7,7 +7,8 @@ body {
 }
 
 main {
-    margin: 100px auto;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 main section:nth-child(odd) img {
@@ -50,15 +51,75 @@ input {
     font-style: normal;
 }
 
+input[type="text"], input[type="email"] {
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    padding: 4px;
+    outline: none;
+    
+    transition-property: background-color;
+    transition-duration: 100ms;
+}
+
+input[type="text"]:hover, input[type="email"]:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: black solid 2px;
+}
+
+input[type="submit"] {
+    margin: auto;
+    display: block;
+    
+    background-color: #4bacf48F;
+    padding: 3px 16px;
+        
+    outline: none;
+    border-style: outset;
+    border-width: 2px;
+    
+    transition-duration: 100ms;
+    transition-property: background-color, border-color, font-weight;
+}
+
+input[type="submit"]:hover  {
+    cursor: pointer;
+    
+    background-color: #4092d1bd;
+}
+
+input[type="submit"]:focus {
+    background-color: #4092d1bd;
+    
+    font-weight: bold;
+}
+
+input[type="submit"]:active {
+    border-style: ridge;
+}
+
 textarea {
     display: block;
     margin: auto;
     
     width: 80%;
     max-width: 100%;
+    
+    background-color: rgba(0,0,0,0.1);
+    border-style: none;
+    border-color: black;
+    
+    padding: 4px;
+    outline: none;
+    
+    transition-property: background-color;
+    transition-duration: 100ms;
 }
 
-input[type="submit"] {
-    margin: auto;
-    display: block;
+textarea:focus {
+   border-style: solid;
 }
+
