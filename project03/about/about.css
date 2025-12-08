@@ -16,7 +16,7 @@ main section:nth-child(even) img {
     float: left;
 }
 
-main *:not(.emphasize) {
+main > *:not(.emphasize) {
     margin: 2% 2.5%;
 }
 

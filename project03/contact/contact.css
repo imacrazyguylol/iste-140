@@ -1,0 +1,64 @@
+body {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-bottom: 250px; /* To make the bottom of the page easier to read */
+
+    min-height: 100vh;
+}
+
+main {
+    margin: 100px auto;
+}
+
+main section:nth-child(odd) img {
+    float: right;
+}
+
+main section:nth-child(even) img {
+    float: left;
+}
+
+main > * {
+    margin: 2% 2.5%;
+}
+
+img {
+    float: right;
+}
+
+/* Flex styling */
+.sidebyside {
+    display: flex;
+    flex-flow: row nowrap;
+
+    justify-content: space-evenly;
+}
+
+.vertical {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* Form styling */
+label {
+    text-align: center;
+}
+
+input {
+    font-family: "Hepta Slab", serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+textarea {
+    display: block;
+    margin: auto;
+    
+    width: 80%;
+    max-width: 100%;
+}
+
+input[type="submit"] {
+    margin: auto;
+    display: block;
+}

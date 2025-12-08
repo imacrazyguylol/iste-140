@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="contact.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hepta+Slab:wght@1..900&family=Zen+Antique&family=Zen+Old+Mincho&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a class="home" href="../index.html">
+            <h1 class="title headFont">Contact</h1>
+        </a>
+
+        <nav class="bodyFont">
+            <a id="copyright" href="../copyright/index.html">Copyright</a>
+            <a id="impact" href="../impact/index.html">Impact</a>
+            <a id="about" href="../about/index.html">About Me</a>
+            <a id="contact" href="#" aria-current="page">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <fieldset>
+            <legend class="bodyFont">Contact form</legend>
+            <h2 class="headFont">Send me a message!</h2>
+
+            <form class="bodyFont" action="#" method="post">
+                <div class="sidebyside">
+                    <div class="vertical">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="Anonymous" maxlength="100">
+                    </div>
+                    <div class="vertical">
+                        <label for="email">Enter your email:</label>
+                        <input type="email" name="email" id="email" placeholder="myemail@domain.tld" maxlength="100">
+                    </div>
+                    <div class="vertical">
+                        <label for="subject">Subject:</label>
+                        <input type="text" name="subject" id="subject" placeholder="Subject" maxlength="300">
+                    </div>
+                </div>
+                <br>
+
+                <textarea name="content" id="content" rows="6" cols="70" placeholder="What do you want to know? What do you want to say?" required></textarea>
+                <br>
+
+                <input type="submit" value="Send message">
+            </form>
+        </fieldset>
+    </main>
+
+    <footer>
+        <p class="attribution bodyFont">&copy; 2025 Liam Rowell</p>
+    </footer>
+</body>
+
+</html>
