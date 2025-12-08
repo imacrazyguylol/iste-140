@@ -34,15 +34,44 @@ section h2 {
 }
 
 /* RWD */
+@media(max-width: 1830px) {
+    .emphasize {
+        font-size: 275%;
+        
+    }
+}
+
+@media(max-width: 1550px) {
+    .emphasize {
+        font-size: 225%;
+    }
+}
+
+@media(max-width: 1060px) {
+    .emphasize {
+        font-size: 200%;
+        margin-bottom: 0rem;
+    }
+}
+
 @media(max-width: 910px) {
     img {
-        height: 50vw;
         max-height: 50vh;
         margin: 30px auto;
     }
-    
+
+    .emphasize {
+        font-size: 300%;
+        margin-bottom: 1rem;
+    }
+
     main {
         margin: 20px auto;
+    }
+    
+    section {
+        display: flex;
+        flex-flow: column nowrap;
     }
 }
 
@@ -50,13 +79,13 @@ section h2 {
     .emphasize {
         font-size: 200%;
     }
-    
-    section p {
+
+    main p {
         text-align: left;
-    }
+    }   
 }
 
-@media(max-width: 395px) {
+@media(max-width: 420px) {
     .emphasize {
         font-size: 150%;
         margin-bottom: 0rem;
