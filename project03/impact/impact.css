@@ -32,3 +32,33 @@ section h2 {
 .emphasize {
     margin-bottom: 1.5rem;
 }
+
+/* RWD */
+@media(max-width: 910px) {
+    img {
+        height: 50vw;
+        max-height: 50vh;
+        margin: 30px auto;
+    }
+    
+    main {
+        margin: 20px auto;
+    }
+}
+
+@media(max-width: 665px) {
+    .emphasize {
+        font-size: 200%;
+    }
+    
+    section p {
+        text-align: left;
+    }
+}
+
+@media(max-width: 395px) {
+    .emphasize {
+        font-size: 150%;
+        margin-bottom: 0rem;
+    }
+}

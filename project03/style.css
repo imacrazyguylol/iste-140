@@ -24,6 +24,8 @@ html {
 body {
     display: flex;
     flex-flow: column nowrap;
+    
+    min-height: 100vh;
 }
 
 img {
@@ -111,7 +113,17 @@ nav a:hover {
 }
 
 nav a[aria-current] {
-    border-bottom: #4bacf4 5px inset;
+    border-bottom: #4bacf4 5px solid;
+}
+
+#dropdownBtn {
+    position: fixed;
+    display: none;
+    left: 15px;
+    top: 10px;
+
+    margin: 0px;
+    padding: 10px;
 }
 
 /* Specific text styles */
@@ -140,4 +152,97 @@ li {
     padding-left: 2em;
     text-indent: -2em;
     margin: 10px 0px;
+}
+
+/* RWD */
+
+@media(max-width: 1200px) {
+    nav a {
+        font-size: 90%;
+    }
+}
+
+@media(max-width: 1000px) {
+    nav a {
+        font-size: 60%;
+    }
+}
+
+@media(max-width: 910px) {
+    main {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 700px) {
+    #dropdownBtn {
+        display: block;
+        cursor: pointer;
+        
+        transition-duration: 250ms;
+    }
+    
+    nav {
+        flex-flow: column;
+        align-items: baseline;
+        
+        height: 20vh;
+        width: 120px;
+        justify-content: space-between;
+        
+        margin: auto;
+        padding: 15px 20px 15px 0px;
+        
+        position: fixed;
+        
+/*         left: 20px; */
+        left: -120px;
+        top: 75px;
+       
+        transition-duration: 250ms;
+    }
+    
+    nav[aria-expanded="true"] {
+        left: 20px;
+        
+        background-color: rgba(100%,100%,100%,0.5);
+        backdrop-filter: blur(5px);
+    }
+    
+    nav a[aria-current] {
+        border-left: #4bacf4 5px solid;
+        border-bottom: unset;
+    }
+    
+    nav a {
+        transition-property: font-weight;
+    }
+    
+    nav a:hover {
+        font-weight: bold;
+    }
+}
+
+@media(max-width: 700px, prefers-reduced-data) {
+    nav[aria-expanded="true"] {
+        backdrop-filter: none;
+    }
+}
+
+@media(max-width: 665px) {
+    main p {
+        font-size: 14px;
+        line-height: 140%;
+    }
+}
+
+@media(max-width: 500px) {
+    header {
+        font-size: 120%;
+    }
 }

@@ -1,7 +1,6 @@
 body {
     margin-left: 15%;
     margin-right: 15%;
-    min-height: 100vh;
 }
 
 main {
@@ -126,4 +125,7 @@ textarea:focus {
     
    margin: 0px, auto;
 }
+
+/* RWD */
+
 
