@@ -83,7 +83,7 @@ input[type="submit"] {
     border-width: 2px;
     
     transition-duration: 100ms;
-    transition-property: background-color, border-color, font-weight;
+    transition-property: background-color, border-color, font-style;
 }
 
 input[type="submit"]:hover  {
@@ -95,7 +95,7 @@ input[type="submit"]:hover  {
 input[type="submit"]:focus {
     background-color: #4092d1bd;
     
-    font-weight: bold;
+    font-style: italic;
 }
 
 input[type="submit"]:active {
@@ -104,7 +104,7 @@ input[type="submit"]:active {
 
 textarea {
     display: block;
-    margin: 2px auto;
+    margin: 1.6px auto;
     
     width: 80%;
     max-width: 100%;
@@ -112,6 +112,7 @@ textarea {
     background-color: rgba(0,0,0,0.1);
     border-style: none;
     border-color: black;
+    border-width: 2px;
     
     padding: 4px;
     outline: none;
@@ -123,9 +124,36 @@ textarea {
 textarea:focus {
    border-style: solid;
     
-   margin: 0px, auto;
+   margin: 0px auto;
 }
 
 /* RWD */
 
+@media(max-width: 1250px) {
+    .sidebyside {
+        flex-flow: column;
+    }
+    
+    .vertical {
+        display: unset;
+    }
+}
 
+@media(max-width: 620px) {
+    .vertical {
+        display: flex;
+        margin: 10px auto;
+    }
+}
+
+@media(max-width: 420px) {
+    body {
+        margin: unset;
+    }
+    
+    footer {
+        margin: auto;
+    }
+    
+    
+}

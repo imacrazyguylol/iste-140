@@ -37,7 +37,7 @@ function dropdown() {
         dropdownBtn.innerHTML = "☰";
     } else {
         expanded = "true"
-        dropdownBtn.innerHTML = "x";
+        dropdownBtn.innerHTML = "⨯";
     }
     dropdownBtn.setAttribute("aria-expanded", expanded);
     navbar.setAttribute("aria-expanded", expanded);
