@@ -124,6 +124,9 @@ nav a[aria-current] {
 
     margin: 0px;
     padding: 10px;
+
+    border: none;
+    background: none;
 }
 
 /* Specific text styles */

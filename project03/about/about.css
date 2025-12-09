@@ -8,16 +8,10 @@ main {
     margin: 100px auto;
 }
 
-main section:nth-child(odd) img {
+img {
     float: right;
-}
-
-main section:nth-child(even) img {
-    float: left;
-}
-
-main > *:not(.emphasize) {
-    margin: 2% 2.5%;
+    
+    margin: 0px 0px 0px 20px;
 }
 
 p {
@@ -30,4 +24,38 @@ h2 {
 
 img {
     float: right;
+}
+
+/* RWD */
+
+@media(max-width: 910px) {
+    img {
+        height: 50vw;
+        max-height: 50vh;
+        margin: 30px auto;
+        
+        float: none;
+    }
+    
+    main {
+        margin: 20px auto;
+    }
+}
+
+@media(max-width: 665px) {
+    .emphasize {
+        font-size: 200%;
+        margin-bottom: 0rem;
+    }
+    
+    section p {
+        text-align: left;
+    }
+}
+
+@media(max-width: 395px) {
+    .emphasize {
+        font-size: 150%;
+        margin-bottom: 0rem;
+    }
 }
