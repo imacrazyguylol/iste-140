@@ -6,7 +6,7 @@ body {
 }
 
 main {
-    margin: 100px auto;
+    margin: 20px auto;
 }
 
 main section:nth-child(odd) img {
